@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: payment-server
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://@localhost:8080/eureka
+server:
+  port: 8082

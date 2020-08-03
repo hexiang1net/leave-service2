@@ -9,11 +9,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>../../DEMO-ZUUL-SWAGGER2/eureka-server</module>
-        <module>../../DEMO-ZUUL-SWAGGER2/zuul-server</module>
-        <module>../../DEMO-ZUUL-SWAGGER2/payment-server</module>
-        <module>../../DEMO-ZUUL-SWAGGER2/order-server</module>
-        <module>../../SpringBoot-Hello-master/springboot-swagger3</module>
+        <module>../eureka-server</module>
+        <module>../zuul-server</module>
+        <module>../payment-server</module>
+        <module>../order-server</module>
+        <module>../springboot-swagger3</module>
     </modules>
 
     <parent>

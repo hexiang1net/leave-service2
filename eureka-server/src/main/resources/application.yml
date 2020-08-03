@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-server      #应用程序名
+eureka:
+  instance:
+    prefer-ip-address: true     #true代表将自己的IP注册到EurekaServer上，false代表注册主机名到EurekaServer
+  client:
+    register-with-eureka: false   #是否向服务端注册自己，它本身就是Eureka Server，所以为false
+    fetch-registry: false        #表示是否从Eureka Server获取信息，因为这是一个单节点，不需要同步其它Eureka Server的数据，所以为 false
+    service-url:
+      defaultZone: http://localhost:8080/eureka    #设置Eureka Client与Eureka Server同步的地址，注册、查询服务都要使用该地址，多个地址可用逗号分隔
+server:
+  port: 8080        #服务器端口

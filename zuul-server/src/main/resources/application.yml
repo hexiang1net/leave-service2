@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: zuul-server
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://@localhost:8080/eureka
+zuul:
+  routes:
+    payment-server:
+      path: /pay/**
+    order-server:
+      path: /order/**
+server:
+  port: 8081
